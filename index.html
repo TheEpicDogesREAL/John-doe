@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle@0.2.0-nightly.2025.10.2/ruffle.js"></script>
+</head>
+<body>
+  <div id="game"></div>
+
+  <script>
+    window.addEventListener("load", () => {
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      document.getElementById("game").appendChild(player);
+      player.load("learn_to_fly.swf");
+    });
+  </script>
+</body>
+</html>
